@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: unified-billing-platform
+
+  # Database Configuration
+  datasource:
+    url: ${DB_URL:jdbc:h2:mem:testdb}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+    driver-class-name: ${DB_DRIVER:org.h2.Driver}
+
+  # JPA/Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    show-sql: ${SHOW_SQL:true}
+    properties:
+      hibernate:
+        dialect: ${DB_DIALECT:org.hibernate.dialect.H2Dialect}
+        format_sql: true
+
+  # JWT Security Configuration
+  security:
+    jwt:
+      secret: ${JWT_SECRET:your-very-long-secret-key-for-jwt-tokens-make-it-at-least-256-bits-long-change-this-in-production}
+      expiration: ${JWT_EXPIRATION:86400000} # 24 hours in milliseconds
+
+# Server Configuration
+server:
+  port: ${SERVER_PORT:8082}
+
+# Logging Configuration
+logging:
+  level:
+    org.hibernate.SQL: ${LOG_SQL:DEBUG}
+    org.springframework.security: ${LOG_SECURITY:DEBUG}
+    org.hibernate.type.descriptor.sql.BasicBinder: ${LOG_BINDER:TRACE}

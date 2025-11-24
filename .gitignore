@@ -1,0 +1,86 @@
+
+# Environment files
+.env
+.env.*
+*/.env
+*/.env.*
+
+
+application.yml
+application.properties
+application-*.yml
+application-*.properties
+**/application.yml
+**/application.properties
+**/application-*.yml
+**/application-*.properties
+
+
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+key.properties
+keystore.jks
+credentials.json
+secrets.json
+config.json
+auth.json
+
+android/key.properties
+android/app/upload-keystore.jks
+android/app/debug.keystore
+android/app/release.keystore
+ios/Runner/GoogleService-Info.plist
+ios/firebase_app_id_file.json
+
+*.db
+*.sqlite
+*.sqlite3
+h2.mv.db
+h2.trace.db
+
+dist/
+build/
+target/
+
+# Dependencies
+node_modules/
+
+# Flutter specific
+frontend/billing_dashboard/.flutter-plugins
+frontend/billing_dashboard/.flutter-plugins-dependencies
+frontend/billing_dashboard/.packages
+frontend/billing_dashboard/.pub-cache/
+frontend/billing_dashboard/.pub/
+frontend/billing_dashboard/build/
+
+# Spring Boot specific
+backend/billing-platform-mis/target/
+backend/billing-platform-mis/.mvn/wrapper/maven-wrapper.jar
+
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*~
