@@ -187,7 +187,7 @@ The system uses a comprehensive H2 database schema with the following key entiti
 
    ```bash
    # Update .env file with backend API URL
-   echo "API_BASE_URL=http://localhost:8080/api" > .env
+   echo "API_BASE_URL=http://localhost:8082/api" > .env
    ```
 
 4. **Run the Frontend**
